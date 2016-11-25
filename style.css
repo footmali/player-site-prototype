@@ -1,0 +1,189 @@
+.site-wrapper {
+	background-image: url(images/adama-traore-cover.jpg);
+	background-position: 50% 70px;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	/*-webkit-transition: all 1s ease-in;
+    -moz-transition: all 1s ease-in;
+    -o-transition: all 1s ease-in;
+    -ms-transition: all 1s ease-in;
+    transition: all 1s ease-in;*/
+}
+
+.masthead {
+	background-color: #efcd35;
+	left: 0;
+    z-index: 10;
+}
+
+.masthead .inner, {
+	margin: 0 auto;
+}
+
+.mastfoot {
+	background-color: #474C4F;
+	left: 0;
+}
+
+.masthead-brand {
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 900;
+	color: #2d3133;
+	font-size: 2em;
+}
+
+.masthead-brand small {
+	color: #FFFFFF;
+}
+
+.masthead-brand a:link {
+	text-decoration: none;
+}
+
+.masthead-social .fa {
+	font-size: 2.5em;
+}
+
+.masthead-social li {
+	display: inline-block;
+}
+
+.cover-heading {
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 900;
+	color: #FFFFFF;
+	font-size: 8em;
+	margin-top: 10%;
+}
+
+.cover-heading span {
+	color: #efcd35;
+}
+
+.cover .lead {
+	font-family: 'Open Sans', sans-serif;
+	color: #efcd35;
+}
+
+.inner-page {
+	text-align: left;
+	padding: 10em 2em 8em;
+}
+
+.inner-pages .section {
+	margin-bottom: 2em;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+	padding-bottom: 1em;
+}
+
+.inner-pages .section:last-of-type {
+	border-bottom: none;
+}
+
+#profile .head h2 {
+	float: left;
+}
+
+#profile, #stats {
+	width: 60%;
+}
+
+#stats{
+    text-align: center;
+}
+
+#profile .head h2 {
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 900;
+	font-size: 4em;
+}
+
+#profile .head .badge {
+	float: right;
+	width: 120px;
+	background: none;
+}
+
+#profile .head .badge img {
+	max-width: 100%;
+}
+
+.profile .name {
+	font-size: 1.25em;
+}
+
+.profile strong {
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 700;
+	font-size: 2em;
+}
+
+#stats h2 {
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 900;
+	margin: 40px 0 20px 0;
+}
+
+#stats strong span {
+    color: rgba(255, 255, 255, 0.25);
+}
+
+#stats span.name {
+    color: #efcd35;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 40px;
+    display: inline-block;
+    margin: 5px 0;
+    display: block;
+    letter-spacing: 2px;
+}
+
+#stats strong {
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 700;
+    color: #FFF;
+    font-size: 64px;
+    line-height: 40px;
+    display: inline-block;
+    margin: 15px 0;
+    line-height: 50px;
+    letter-spacing: 20px;
+}
+
+#stats .second {
+    border-left: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.grid-sizer {
+	width: 33.333%;
+}
+
+.thumbnail {
+	position: relative;
+}
+
+.news-item .text {
+	margin-bottom: 35px;
+}
+
+.news-item .control {
+	position: absolute;
+    bottom: 0;
+    background-color: #474C4F;
+    width: 100%;
+    left: 0;
+    padding: 10px;
+}
+
+.news-item .control .fa {
+	color: #efcd35;
+}
+
+@media (max-width: 992px) {
+	.site-wrapper {
+		background-size: cover;
+	}
+}
+
