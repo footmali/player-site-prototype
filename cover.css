@@ -32,6 +32,8 @@ body {
 body {
   color: #fff;
   font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  line-height: 21px;
   text-align: center;
 }
 
@@ -51,11 +53,6 @@ body {
 .cover-container {
   margin-right: auto;
   margin-left: auto;
-}
-
-/* Padding for spacing */
-.inner {
-  padding: 30px;
 }
 
 
@@ -96,28 +93,11 @@ body {
   border-bottom-color: rgba(255,255,255,.25);
 }
 
-@media (min-width: 768px) {
-  .masthead-brand {
-    float: left;
-  }
-  .masthead-nav {
-    float: left;
-    margin-left: 20%;
-  }
-
-  .masthead-social {
-    float: right;
-  }
-}
-
-
 /*
  * Cover
  */
 
-.cover {
-  padding: 0 20px;
-}
+
 .cover .btn-lg {
   padding: 10px 20px;
   font-weight: bold;
@@ -130,7 +110,16 @@ body {
 
 .mastfoot {
   color: #999; /* IE8 proofing */
-  color: rgba(255,255,255,.5);
+  color: rgba(255,255,255, 0.5);
+
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  min-height: 40px;
+}
+
+.mastfoot .inner {
+  padding: 10px;
 }
 
 
@@ -139,15 +128,32 @@ body {
  */
 
 @media (min-width: 768px) {
+  body {
+    font-size: 16px;
+    line-height: 28px;
+  }
   /* Pull out the header and footer */
   .masthead {
     position: fixed;
     top: 0;
   }
-  .mastfoot {
-    position: fixed;
-    bottom: 0;
+
+  .inner {
+    padding: 30px;
   }
+
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: left;
+    margin-left: 20%;
+  }
+
+  .masthead-social {
+    float: right;
+  }
+
   /* Start the vertical centering */
   .site-wrapper-inner {
     vertical-align: middle;
@@ -158,6 +164,8 @@ body {
   .cover-container {
     width: 100%; /* Must be percentage or pixels for horizontal alignment */
   }
-}
 
+  .cover {
+    padding: 0 20px;
+  }
 }

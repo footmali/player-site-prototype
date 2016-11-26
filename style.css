@@ -17,15 +17,6 @@
     z-index: 10;
 }
 
-.masthead .inner, {
-	margin: 0 auto;
-}
-
-.mastfoot {
-	background-color: #474C4F;
-	left: 0;
-}
-
 .masthead-brand {
 	font-family: 'Titillium Web', sans-serif;
 	font-weight: 900;
@@ -49,26 +40,31 @@
 	display: inline-block;
 }
 
+.mastfoot {
+	background-color: #474C4F;
+	left: 0;
+}
+
 .cover-heading {
 	font-family: 'Titillium Web', sans-serif;
 	font-weight: 900;
+	font-size: 6em;
 	color: #FFFFFF;
-	font-size: 8em;
-	margin-top: 10%;
+	margin-top: 45%;
 }
 
 .cover-heading span {
-	color: #efcd35;
+	display: inline-block;
 }
 
-.cover .lead {
-	font-family: 'Open Sans', sans-serif;
+.cover-heading span.color {
 	color: #efcd35;
 }
 
 .inner-page {
 	text-align: left;
-	padding: 10em 2em 8em;
+	padding: 1em 1em 5em;
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
 .inner-pages .section {
@@ -85,10 +81,6 @@
 	float: left;
 }
 
-#profile, #stats {
-	width: 60%;
-}
-
 #stats{
     text-align: center;
 }
@@ -100,7 +92,6 @@
 }
 
 #profile .head .badge {
-	float: right;
 	width: 120px;
 	background: none;
 }
@@ -131,9 +122,9 @@
 
 #stats span.name {
     color: #efcd35;
-    font-size: 16px;
+    font-size: 1em;
     text-transform: uppercase;
-    line-height: 40px;
+    line-height: 30px;
     display: inline-block;
     margin: 5px 0;
     display: block;
@@ -144,20 +135,15 @@
 	font-family: 'Titillium Web', sans-serif;
 	font-weight: 700;
     color: #FFF;
-    font-size: 64px;
-    line-height: 40px;
+    font-size: 3em;
     display: inline-block;
     margin: 15px 0;
-    line-height: 50px;
-    letter-spacing: 20px;
+    line-height: 1.33em;
+    letter-spacing: 5px;
 }
 
 #stats .second {
     border-left: 1px solid rgba(255, 255, 255, 0.25);
-}
-
-.grid-sizer {
-	width: 33.333%;
 }
 
 .thumbnail {
@@ -181,9 +167,44 @@
 	color: #efcd35;
 }
 
-@media (max-width: 992px) {
-	.site-wrapper {
-		background-size: cover;
+@media (min-width: 768px) {
+	.cover-heading {
+		font-size: 8em;
+		margin-top: 10%;
+	}
+
+	#profile, #stats {
+		width: 60%;
+	}
+
+	.inner-page {
+		text-align: left;
+		background-color: transparent;
+		padding: 10em 2em 8em;
+	}
+
+	#profile .head .badge {
+		float: right;
+	}
+
+	#stats span.name {
+	    font-size: 16px;
+	    line-height: 40px;
+	}
+
+	#stats strong {
+	    font-size: 64px;
+	    line-height: 50px;
+	    letter-spacing: 20px;
+	}
+
+	.grid-sizer {
+		width: 50%;
 	}
 }
 
+@media (min-width: 992px) {
+	.grid-sizer {
+		width: 33.33%;
+	}
+}
