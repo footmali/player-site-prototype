@@ -93,6 +93,11 @@ body {
   border-bottom-color: rgba(255,255,255,.25);
 }
 
+.nav.masthead-social>li>a:focus, .nav.masthead-social>li>a:hover {
+    text-decoration: none;
+    background-color: #595f63;
+}
+
 /*
  * Cover
  */
@@ -148,10 +153,6 @@ body {
   .masthead-nav {
     float: left;
     margin-left: 20%;
-  }
-
-  .masthead-social {
-    float: right;
   }
 
   /* Start the vertical centering */

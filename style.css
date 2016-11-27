@@ -167,6 +167,18 @@
 	color: #efcd35;
 }
 
+.gallery-item {
+	padding: 0;
+}
+
+.gallery-item img {
+	max-width: 100%;
+}
+
+.gallery-grid-sizer {
+	width: 33.33%;
+}
+
 @media (min-width: 768px) {
 	.cover-heading {
 		font-size: 8em;
